@@ -1,0 +1,19 @@
+Project: 
+
+   My first react project is to create a simple expense budget tracker. Idea is to keep track of the expenses made in a month. If time permits will add a dashboard with graph to show the expense trends. 
+
+   1. Front page provides the description to the user and allows him to login (Will create with one user, will extend to signups if time permits)
+   2. In the signin page user can login which allows to authentocate with firebase
+   3. Sign in page takes them to dashboard page where expenses and transactions are displayed 
+   4. User is allowed to add a transaction (will extend to update)
+   
+
+   Expected package dependencies: 
+
+    1. react
+    2. react-dom
+    3. react-router-dom (links)
+    4. firebase (authentocation and storage)
+    5. react-bootstrap
+    6. react-chartjs (Charts)
+    7. moment (for time and dates)
