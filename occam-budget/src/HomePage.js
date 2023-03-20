@@ -12,7 +12,9 @@ function HomePage() {
               <li>
                   <Link to="/expense">Expense</Link>
               </li>
-
+              <li>
+                  <Link to="/visual">Display Data</Link>
+              </li>
           </ul>
       </div>
     );
