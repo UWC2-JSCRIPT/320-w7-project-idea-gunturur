@@ -1,9 +1,11 @@
-import { auth } from './firebaseConfig';
-import { useState } from "react";
+import {auth} from './firebaseConfig';
+import {useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import IncomeForm from './IncomeForm';
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+import container from "react-bootstrap/Container";
+import './LoginForm.css'
 
 function LoginForm() {
     // Create the email ad password variables and set the state
@@ -34,26 +36,27 @@ function LoginForm() {
             });
     };
     return (
-        <>
-        <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" value={email} onChange={handleEmailChange}/>
-                <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                </Form.Text>
-            </Form.Group>
+        <div className="login-form-container">
+        <container>
+            <div className="login-container">
+                <Form>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="Enter email" value={email} onChange={handleEmailChange}/>
+                    </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" value={password} onChange={handlePasswordChange}/>
-            </Form.Group>
-            {errorMessage  && <div className="text-danger">{errorMessage}</div>}
-            <Button variant="primary" type="submit" onClick={handleSignIn}>
-                Sign in
-            </Button>
-        </Form>
-        </>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password" placeholder="Password" value={password} onChange={handlePasswordChange}/>
+                    </Form.Group>
+                    {errorMessage  && <div className="text-danger">{errorMessage}</div>}
+                    <Button variant="primary" type="submit" onClick={handleSignIn}>
+                        Sign in
+                    </Button>
+                </Form>
+            </div>
+        </container>
+        </div>
     );
 }
 
