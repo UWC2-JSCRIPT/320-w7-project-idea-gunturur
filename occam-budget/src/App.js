@@ -4,6 +4,7 @@ import 'firebase/auth';
 import 'firebase/firestore';
 import IncomeForm from "./IncomeForm";
 import ExpensesForm from "./ExpensesForm";
+import SignupForm from "./SignupForm";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 //import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -21,6 +22,7 @@ function App() {
                 <Route path="income" element={<IncomeForm/>}/>
                 <Route path="expense" element={<ExpensesForm/>}/>
                 <Route path="visual" element={<Visualization/>}/>
+                <Route path="signup" element={<SignupForm/>}/>
             </Routes>
         </Router>
     </div>

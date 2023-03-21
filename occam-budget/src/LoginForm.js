@@ -34,6 +34,7 @@ function LoginForm() {
                 setErrorMessage(error.message)
             });
     };
+
     return (
         <div className="login-form-container">
             <Container>
@@ -53,6 +54,14 @@ function LoginForm() {
 
                         <Button variant="primary" type="submit" onClick={handleSignIn}>
                             Sign in
+                        </Button>
+                        <Button
+                            variant="primary"
+                            type="submit"
+                            onClick={() => navigate('/signup')}
+                            className="ml-2"
+                        >
+                            SignUP
                         </Button>
                     </Form>
                 </div>
