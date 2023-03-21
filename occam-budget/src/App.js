@@ -14,7 +14,7 @@ function App() {
         {/*Links to different forms*/}
         <Router>
             <Routes>
-                <Route exact path="/" element={<LoginForm/>}/>
+                <Route exact path="/login" element={<LoginForm/>}/>
                 <Route path="home" element={<HomePage/>}/>
                 <Route path="income" element={<IncomeForm/>}/>
                 <Route path="expense" element={<ExpensesForm/>}/>

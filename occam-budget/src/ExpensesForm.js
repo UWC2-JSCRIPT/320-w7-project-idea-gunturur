@@ -2,7 +2,6 @@ import {useState} from 'react';
 import {db} from './firebaseConfig';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import IncomeForm from "./IncomeForm";
 import {useNavigate} from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
